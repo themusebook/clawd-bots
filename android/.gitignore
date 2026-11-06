@@ -45,3 +45,16 @@ app-example
 # generated native folders
 /ios
 /android
+
+# release signing & local credentials (never commit)
+*.keystore
+!debug.keystore
+credentials.json
+credentials/
+keystore.properties
+signing.properties
+local.properties
+gradle.properties.local
+*.apk
+*.aab
+.env.*

@@ -43,7 +43,13 @@ async function copyProject(name = 'app') {
 
   await fs.cp(projectRoot, dest, {
     filter: (src) => {
-      const name = path.basename(src)
+      // Judge paths relative to the project root: the root itself may be named `android`.
+      const relative = path.relative(projectRoot, src)
+
+      if (relative === '') {
+        return true
+      }
+      const name = path.basename(relative)
 
       return !skipped.has(name) && !lockfiles.has(name)
     },

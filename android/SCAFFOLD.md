@@ -287,11 +287,16 @@ path; mascot on absence or failure) in roster rows and the chat header.
    this tier: dictation, computer view, search.
 4. ~~BotActivity → ongoing Android notifications with inline approval answers~~
    — done above.
-5. Copy this project into the clawd-bots repo on the Mac (as `android/`
-   beside `ios/`) — do that as a Mac step with disk space checked first; the
-   Mac was full on 2026-10-31.
-6. dApp Store: Digital Asset Links on clawdbot.party against the app signing
-   key, listing copy reused from iOS `AppStore/`.
+5. ~~Copy this project into the clawd-bots repo as `android/` beside `ios/`~~
+   — done on branch `solana-mobile-release-prep` (2026-11-05).
+6. dApp Store: release prep landed 2026-11-05 — `plugins/with-release-signing.js`
+   (release builds require `CLAWD_RELEASE_*` credentials and never fall back
+   to the debug key), `eas.json` `dapp-store` APK profile, `versionCode` 1,
+   explicit Android permissions, and `docs/release/` (listing, reviewer notes,
+   release steps, asset checklist). Still open: Digital Asset Links for
+   `com.clawdbot.app` against the release key fingerprint (the website's
+   current assetlinks names a different package), real screenshots, legal
+   URLs, publisher details, signed arm64 APK and on-device QA.
 7. Seeker install: build the dev client on the Mac (Android Studio) and
    install on the owner's Seeker — it pairs as `com.clawdbot.app` and the
    wallet flows run through Seeker Connect / MWA on-device. Owner asked for
