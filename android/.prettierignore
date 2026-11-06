@@ -1,0 +1,14 @@
+# Add files here to ignore them from prettier formatting
+/.expo
+/android
+/coverage
+/dist
+/ios
+/tmp
+pnpm-lock.yaml
+.agents
+agent
+# Captured from a real harness — a fixture diff is a contract change, not a style fix.
+/companion-core/fixtures
+/SCAFFOLD.md
+companion-core/mascot-data.ts
