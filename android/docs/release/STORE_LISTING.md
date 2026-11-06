@@ -14,7 +14,7 @@
 
 ## Short description
 
-The phone companion for Clawd Bot: follow your bots, answer approvals and connect your Solana wallet.
+Your Clawd Bot companion for Solana Mobile
 
 ## Long description
 
